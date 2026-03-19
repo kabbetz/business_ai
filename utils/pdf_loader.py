@@ -1,0 +1,19 @@
+from langchain_community.document_loaders import PyPDFLoader
+from langchain_text_splitters import RecursiveCharacterTextSplitter
+
+def load_financial_pdfs(pdf_paths):
+    documents = []
+
+    for path in pdf_paths:
+        loader = PyPDFLoader(path)
+        docs = loader.load()
+        documents.extend(docs)
+
+    splitter = RecursiveCharacterTextSplitter(
+        chunk_size=1000,
+        chunk_overlap=100
+    )
+
+    split_docs = splitter.split_documents(documents)
+
+    return split_docs 
