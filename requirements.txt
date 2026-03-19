@@ -10,4 +10,4 @@ langchain-core==0.1.52
 langchain-openai==0.0.6
 langchain-text-splitters
 
-pyndantic<2
+pydantic<2
