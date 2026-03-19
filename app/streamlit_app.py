@@ -27,7 +27,6 @@ from chains.qa_chain import build_qa_chain
 
 st.title("InsightForge - AI Business Intelligence Assistant")
 
-@st.cache_resource
 def setup_system():
     import os  
       
