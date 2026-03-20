@@ -1,7 +1,6 @@
 streamlit
 pandas
 matplotlib
-chromadb
 pypdf
 
 langchain==0.1.17
@@ -9,5 +8,7 @@ langchain-community==0.0.36
 langchain-core==0.1.52
 langchain-openai==0.0.6
 langchain-text-splitters
+
+chromadb==0.4.24
 
 pydantic<2
